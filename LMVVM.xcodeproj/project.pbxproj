@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B27440120371C5D000CD04E /* DataViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2743FE20371C5D000CD04E /* DataViewModelTests.swift */; };
+		5B27440220371C5D000CD04E /* BindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27440020371C5D000CD04E /* BindingTests.swift */; };
 		5B28327B2037192500C5B0E8 /* LMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2832712037192500C5B0E8 /* LMVVM.framework */; };
-		5B2832802037192500C5B0E8 /* LMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28327F2037192500C5B0E8 /* LMVVMTests.swift */; };
 		5B2832822037192500C5B0E8 /* LMVVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2832742037192500C5B0E8 /* LMVVM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B2832942037194D00C5B0E8 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28328C2037194D00C5B0E8 /* Binding.swift */; };
+		5B2832952037194D00C5B0E8 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28328E2037194D00C5B0E8 /* DataViewModel.swift */; };
+		5B2832962037194D00C5B0E8 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B28328F2037194D00C5B0E8 /* TableViewModel.swift */; };
+		5B2832972037194D00C5B0E8 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2832902037194D00C5B0E8 /* CollectionViewModel.swift */; };
+		5B2832982037194D00C5B0E8 /* GenericCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2832922037194D00C5B0E8 /* GenericCellProtocol.swift */; };
+		5B2832992037194D00C5B0E8 /* GenericItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2832932037194D00C5B0E8 /* GenericItemProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B2743FE20371C5D000CD04E /* DataViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewModelTests.swift; sourceTree = "<group>"; };
+		5B27440020371C5D000CD04E /* BindingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingTests.swift; sourceTree = "<group>"; };
 		5B2832712037192500C5B0E8 /* LMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2832742037192500C5B0E8 /* LMVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMVVM.h; sourceTree = "<group>"; };
 		5B2832752037192500C5B0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B28327A2037192500C5B0E8 /* LMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B28327F2037192500C5B0E8 /* LMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMVVMTests.swift; sourceTree = "<group>"; };
 		5B2832812037192500C5B0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B28328C2037194D00C5B0E8 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		5B28328E2037194D00C5B0E8 /* DataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		5B28328F2037194D00C5B0E8 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		5B2832902037194D00C5B0E8 /* CollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		5B2832922037194D00C5B0E8 /* GenericCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCellProtocol.swift; sourceTree = "<group>"; };
+		5B2832932037194D00C5B0E8 /* GenericItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericItemProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2743FD20371C5D000CD04E /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				5B2743FE20371C5D000CD04E /* DataViewModelTests.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		5B2743FF20371C5D000CD04E /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				5B27440020371C5D000CD04E /* BindingTests.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
 		5B2832672037192400C5B0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +101,8 @@
 		5B2832732037192500C5B0E8 /* LMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				5B28328B2037194D00C5B0E8 /* Binding */,
+				5B28328D2037194D00C5B0E8 /* Listing */,
 				5B2832742037192500C5B0E8 /* LMVVM.h */,
 				5B2832752037192500C5B0E8 /* Info.plist */,
 			);
@@ -80,10 +112,39 @@
 		5B28327E2037192500C5B0E8 /* LMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B28327F2037192500C5B0E8 /* LMVVMTests.swift */,
+				5B2743FF20371C5D000CD04E /* Binding */,
+				5B2743FD20371C5D000CD04E /* Listing */,
 				5B2832812037192500C5B0E8 /* Info.plist */,
 			);
 			path = LMVVMTests;
+			sourceTree = "<group>";
+		};
+		5B28328B2037194D00C5B0E8 /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				5B28328C2037194D00C5B0E8 /* Binding.swift */,
+			);
+			path = Binding;
+			sourceTree = "<group>";
+		};
+		5B28328D2037194D00C5B0E8 /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				5B2832912037194D00C5B0E8 /* Protocols */,
+				5B28328E2037194D00C5B0E8 /* DataViewModel.swift */,
+				5B28328F2037194D00C5B0E8 /* TableViewModel.swift */,
+				5B2832902037194D00C5B0E8 /* CollectionViewModel.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
+		5B2832912037194D00C5B0E8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5B2832922037194D00C5B0E8 /* GenericCellProtocol.swift */,
+				5B2832932037194D00C5B0E8 /* GenericItemProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2832992037194D00C5B0E8 /* GenericItemProtocol.swift in Sources */,
+				5B2832982037194D00C5B0E8 /* GenericCellProtocol.swift in Sources */,
+				5B2832972037194D00C5B0E8 /* CollectionViewModel.swift in Sources */,
+				5B2832962037194D00C5B0E8 /* TableViewModel.swift in Sources */,
+				5B2832952037194D00C5B0E8 /* DataViewModel.swift in Sources */,
+				5B2832942037194D00C5B0E8 /* Binding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2832802037192500C5B0E8 /* LMVVMTests.swift in Sources */,
+				5B27440120371C5D000CD04E /* DataViewModelTests.swift in Sources */,
+				5B27440220371C5D000CD04E /* BindingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +402,7 @@
 		5B2832862037192500C5B0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -343,6 +412,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LMVVM/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.brunofilipemiguens.LMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -355,6 +425,7 @@
 		5B2832872037192500C5B0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -364,6 +435,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LMVVM/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pt.brunofilipemiguens.LMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -376,6 +448,7 @@
 		5B2832892037192500C5B0E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JHLNX87873;
 				INFOPLIST_FILE = LMVVMTests/Info.plist;
@@ -390,6 +463,7 @@
 		5B28328A2037192500C5B0E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JHLNX87873;
 				INFOPLIST_FILE = LMVVMTests/Info.plist;

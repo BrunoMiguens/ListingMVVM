@@ -1,0 +1,23 @@
+# paths to include during linting. `--path` is ignored if present.
+included:
+  - LMVVM
+
+# paths to ignore during linting. Takes precedence over `included`.
+excluded:
+  - LMVVMTests
+
+disabled_rules:
+  - shorthand_operator
+
+# rules that have both warning and error levels, can set just the warning level
+file_length:
+  warning: 400
+  error: 700
+  ignores_comments: true
+line_length:
+  warning: 180
+  error: 200
+  ignores_comments: true
+
+# reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
+reporter: "xcode"

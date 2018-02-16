@@ -1,0 +1,20 @@
+author: Bruno Filipe Miguêns
+author_url: https://www.github.com/BrunoMiguens
+copyright: 'Bruno Filipe Miguêns 2018'
+
+min_acl: internal
+github_url: https://github.com/AtlasVerticals/ios-realestate
+
+theme: fullwidth
+output: Docs
+exclude: [LMVVMTests]
+readme: README.md
+documentation: docs/*.md
+# source_directory: RealEstate
+
+clean: true
+skip_undocumented: false
+hide_documentation_coverage: false
+
+module: LMVVM
+xcodebuild_arguments: [-scheme, LMVVM]
