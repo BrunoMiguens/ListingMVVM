@@ -16,5 +16,4 @@ comment:
   require_base: no
   require_head: yes
 ignore:
-  - "LMVVMTests/Mock/**/*"
-  - "/**/*Tests.swift"
+  - "LMVVMTests/**/*"
