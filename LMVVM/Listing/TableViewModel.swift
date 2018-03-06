@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class TableViewModel<T, C> where T: GenericItemProtocol, C: GenericCellProtocol, C: UITableViewCell {
+open class TableViewModel<T, C> where C: GenericCellProtocol & UITableViewCell {
 
     public typealias ModelType = T
     public typealias DataViewModelHandler = (TableViewModel<T, C>) -> Void
@@ -50,9 +50,12 @@ extension TableViewModel {
         return data.count
     }
 
-    public func cell(on tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
-        guard var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? C else {
-            return UITableViewCell()
+    public func cell(on tableView: UITableView, at indexPath: IndexPath) -> C {
+        
+        var cell = C()
+        
+        if let reusable = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? C {
+            cell = reusable
         }
 
         if let viewModel = data.index(of: indexPath.row) as? C.ModelType {
