@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class CollectionViewModel<T, C> where T: GenericItemProtocol, C: GenericCellProtocol, C: UICollectionViewCell {
+open class CollectionViewModel<T, C> where C: GenericCellProtocol & UICollectionViewCell {
 
     public typealias ModelType = T
     public typealias DataViewModelHandler = (CollectionViewModel<T, C>) -> Void
@@ -50,9 +50,12 @@ extension CollectionViewModel {
         return data.count
     }
 
-    public func cell(on collectionView: UICollectionView, at indexPath: IndexPath) -> UICollectionViewCell {
-        guard var cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? C else {
-            return UICollectionViewCell()
+    public func cell(on collectionView: UICollectionView, at indexPath: IndexPath) -> C {
+
+        var cell = C()
+
+        if let reusable = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? C {
+            cell = reusable
         }
 
         if let viewModel = data.index(of: indexPath.row) as? C.ModelType {

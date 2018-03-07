@@ -1,7 +1,7 @@
 # ListingMVVM
 
 [![CI Status](https://www.bitrise.io/app/ee017a1e938e97f6/status.svg?token=5CIU9VwP44DIDMuiIuroNw&branch=master)](https://www.bitrise.io/app/ee017a1e938e97f6)
-[![Coverage](https://codecov.io/gh/BrunoMiguens/LMVVM/branch/master/graph/badge.svg)](https://codecov.io/gh/BrunoMiguens/LMVVM)
+[![codecov](https://codecov.io/gh/BrunoMiguens/ListingMVVM/branch/master/graph/badge.svg)](https://codecov.io/gh/BrunoMiguens/ListingMVVM)
 [![Version](https://img.shields.io/cocoapods/v/ListingMVVM.svg?style=flat)](https://github.com/BrunoMiguens/ListingMVVM/releases)
 ![License](https://img.shields.io/cocoapods/l/ListingMVVM.svg?style=flat)
 ![Platform](https://img.shields.io/cocoapods/p/ListingMVVM.svg?style=flat)

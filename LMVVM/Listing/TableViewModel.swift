@@ -22,11 +22,11 @@ open class TableViewModel<T, C> where C: GenericCellProtocol & UITableViewCell {
         }
     }
 
-    public init(cellIdentifier: String, collection: DataViewModel<ModelType>? = nil) {
+    public init(cellIdentifier: String, data: DataViewModel<ModelType>? = nil) {
         self.cellIdentifier = cellIdentifier
-
-        if let data = collection {
-            self.data = data
+        
+        if let source = data {
+            self.data = source
         }
     }
 
