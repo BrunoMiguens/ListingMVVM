@@ -1,10 +1,21 @@
-language: objective-c
-osx_image: xcode9.2
-xcode_scheme: LMVVMTests
-xcode_project: LMVVM.xcodeproj
+os: osx
+osx_image: xcode10.2
+language: swift
+
+env:
+  matrix:
+    - OS=11.4 NAME='iPad Pro (12.9-inch)'
+    - OS=11.4 NAME='iPhone X'
+    - OS=12.2 NAME='iPad Pro (12.9-inch) (3rd generation)'
+    - OS=12.2 NAME='iPhone Xʀ'
+    
+
 before_install:
-  - export LANG=en_US.UTF-8
-  - brew install swiftlint
-  - sudo gem install slather --no-ri --no-rdoc
+  - gem install slather --no-document
+
+script:
+  - set -o pipefail && xcodebuild -enableCodeCoverage YES -project LMVVM.xcodeproj -scheme LMVVM -sdk iphonesimulator -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES build test | xcpretty -c --test --color
+
 after_success:
-  - codecov
+  - slather
+  - bash <(curl -s https://codecov.io/bash) -f reports/cobertura.xml -X coveragepy -X gcov -X xcode

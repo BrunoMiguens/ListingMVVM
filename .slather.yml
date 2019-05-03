@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: LMVVM.xcodeproj
+scheme: LMVVM
+output_directory: reports
+ignore:
+  - LMVVMTests/*
